@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Testimonials</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="#submit-testimonial">Submit Testimonial</a>
+        <a href="#display-testimonials">View Testimonials</a>
+        <button id="toggle-theme">Toggle Dark Mode</button>
+    </nav>
+
+    <div id="submit-testimonial" class="section">
+        <h2>Submit Your Testimonial</h2>
+        <form id="testimonial-form">
+            <input type="text" id="name" placeholder="Your Name" required><br><br>
+            <textarea id="message" placeholder="Your Testimonial" required></textarea><br><br>
+            <label>Rating: </label>
+            <select id="rating">
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5" selected>5 Stars</option>
+            </select><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="display-testimonials" class="section">
+        <h2>What Our Customers Say</h2>
+        <div id="testimonials-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
